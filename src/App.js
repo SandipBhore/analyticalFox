@@ -1,12 +1,22 @@
-
 import './App.css';
-import Registration from './Registration'
+import {
+  BrowserRouter as Router,
+  
+  Route
+  
+} from "react-router-dom";
+
+import R from './R'
+import Registraion from './Registration'
 
 function App() {
   return (
-    <div>
-      <Registration/>
-    </div>
+    <Router>
+      
+      <Route path="/" exact component={Registraion}></Route>
+      <Route path="/R" exact component={R}></Route>
+
+    </Router>
     
     
     
