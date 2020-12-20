@@ -20,7 +20,7 @@ class R extends React.Component {
                 type="text"
                 className="form-control"
                 
-                value={this.props.location.object.Username}
+                placeholder={this.props.location.object.Username}
                 
                 
               />
@@ -30,7 +30,7 @@ class R extends React.Component {
               <input
                 type="password"
                 className="form-control"
-                value={this.props.location.object.Password}
+                placeholder={this.props.location.object.Password}
                 
               />
             </div>
@@ -39,7 +39,7 @@ class R extends React.Component {
               <input
                 type="email"
                 className="form-control"
-                value={this.props.location.object.email}
+                placeholder={this.props.location.object.email}
                 
               />
             </div>
@@ -48,13 +48,13 @@ class R extends React.Component {
               <input
                 type="number"
                 className="form-control"
-                value={this.props.location.object.Phone}
+                placeholder={this.props.location.object.Phone}
                 
 
               />
             </div>
             <div className="form-group">
-              <fieldset required>
+              <fieldset >
                 <legend>Choose your gender:</legend>
                 <label>Male</label>
                 <input
@@ -64,7 +64,7 @@ class R extends React.Component {
                   id="male"
                   defaultValue="male"
                   defaultChecked
-                  
+                  readOnly
                   
                 />
                 <label htmlFor="female">Female</label>
@@ -74,7 +74,7 @@ class R extends React.Component {
                   name="gender"
                   id="female"
                   defaultValue="female"
-                  
+                  readOnly
                 />
                 <label>Other</label>
                 <input
@@ -84,6 +84,7 @@ class R extends React.Component {
                   id="other"
                   defaultValue="other"
                   
+                  readOnly
                 />
               </fieldset>
             </div>
@@ -93,7 +94,7 @@ class R extends React.Component {
                 type="text"
                 className="form-control"
                 id="inputAddress"
-                value={this.props.location.object.Address}
+                placeholder={this.props.location.object.Address}
                 readOnly
                 
               />
@@ -106,7 +107,7 @@ class R extends React.Component {
                   type="Number"
                   id="salary"
                   name="salary"
-                  value={this.props.location.object.salary}
+                  placeholder={this.props.location.object.salary}
                 
                   type="text"
                   
